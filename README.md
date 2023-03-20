@@ -114,16 +114,16 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q.4 Which airline has boarded the most?
  <img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">
-- Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
+ - Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
 
 
 #### Q.5 Which source will be having highest fare?
  <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
  - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
- - Banglore as the source location has the most outliers while Chennai has the least.
+  - Banglore as the source location has the most outliers while Chennai has the least.
  
 ### Q.6 Which destination will be having highest fare?
    <img width="999" alt="Q 6_screenshot" src="https://user-images.githubusercontent.com/127043120/226341067-b7eb1832-9d73-4073-b63c-8fc4d22444e1.png"> 
   - Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
-  - New Delhi as the destination location has most of the outliers while Kolkata has the least.
+   - New Delhi as the destination location has most of the outliers while Kolkata has the least.
   
