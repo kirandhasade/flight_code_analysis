@@ -108,8 +108,8 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q.3. Which airline is most expensive?
 <img width="1010" alt="Q 3_screenshot" src="https://user-images.githubusercontent.com/127043120/226340487-0dabd559-852a-4b12-b161-2c023e8f3d47.png">
-  - Jet Airways Business has higher flight fares as compared to other Airlines, followed by Jet Airways and Multiple carriers.
-  - Jet Airways has the most outliers in terms of price.
+   - Jet Airways Business has higher flight fares as compared to other Airlines, followed by Jet Airways and Multiple carriers.
+   - Jet Airways has the most outliers in terms of price.
 
 #### Q.4 Which airline has boarded the most?
 <img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">
@@ -117,8 +117,7 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q.5 Which source will be having highest fare?
 <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
-  - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
-
+ - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
  - Banglore as the source location has the most outliers while Chennai has the least.
 
 ### Q.6 Which destination will be having highest fare?
