@@ -100,28 +100,27 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
 <img width="997" alt="Q 1_screenshot" src="https://user-images.githubusercontent.com/127043120/226339938-66a1440a-001e-4c83-a3a0-aa251d2dcb93.png">
-- Of the total flight tickets sold Jet Airways has the highest share followed by Indigo.   
+ - Of the total flight tickets sold Jet Airways has the highest share followed by Indigo.   
 
 #### Q.2. Which month have most number of flights?
 <img width="641" alt="Q 2_screenshot" src="https://user-images.githubusercontent.com/127043120/226340261-e2a55e8b-b723-49c3-9683-cca08c0c2ca2.png">
-- May has most number of flights followed by June and March.
+ - May has most number of flights followed by June and March.
 
 #### Q.3. Which airline is most expensive?
 <img width="1010" alt="Q 3_screenshot" src="https://user-images.githubusercontent.com/127043120/226340487-0dabd559-852a-4b12-b161-2c023e8f3d47.png">
- - Jet Airways Business has higher flight fares as compared to other Airlines, followed by Jet Airways and Multiple carriers.
- - Jet Airways has the most outliers in terms of price.
+  - Jet Airways Business has higher flight fares as compared to other Airlines, followed by Jet Airways and Multiple carriers.
+  - Jet Airways has the most outliers in terms of price.
 
 #### Q.4 Which airline has boarded the most?
 <img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">
-- Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
+ - Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
 
 #### Q.5 Which source will be having highest fare?
 <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
- - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
+  - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
 
  - Banglore as the source location has the most outliers while Chennai has the least.
 
 ### Q.6 Which destination will be having highest fare?
-<img width="999" alt="Q 6_screenshot" src="https://user-images.githubusercontent.com/127043120/226341067-b7eb1832-9d73-4073-b63c-8fc4d22444e1.png">
-  - Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
+<img width="999" alt="Q 6_screenshot" src="https://user-images.githubusercontent.com/127043120/226341067-b7eb1832-9d73-4073-b63c-8fc4d22444e1.png">       - Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
   - New Delhi as the destination location has most of the outliers while Kolkata has the least.
