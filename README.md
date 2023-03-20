@@ -24,7 +24,7 @@ Using flight price dataset we try to find out following questions answer:
 - This dataset comprises of contains information about flight booking options data taken from Kaggle for flight travel between India's top 6 metro cities.
 - This data consists of 11 rows and 13354 columns.
 
-### Data Understanding
+### Phase 2:Data Understanding
 ### Observation:
   1. airline:
   - Depicts name of the airline from which the ticket is booked.
