@@ -14,18 +14,17 @@ Using flight price dataset we try to find out following questions answer:
 5. Which source will be having highest fare?
 6. Which destination will be having highest fare?
 
-### Analysis Involve Phases:
-1. Data collection
+### Project Involve Phases:
+1. Data Collection
 2. Data Understanding
-3. Data Cleaning and Preparation 
-4. Data Analyse
+3. Data Cleaning & Preparation 
+4. Data Analysis
 
 ### Phase 1. Data Collection
-- This dataset comprises of contains information about flight booking options data taken from Kaggle for flight travel between India's top 6 metro cities.
+- This dataset comprises of contains information about flight booking options. Data taken from Kaggle - flights travel between India's top 6 metro cities.
 - This data consists of 11 rows and 13354 columns.
 
 ### Phase 2:Data Understanding
-### Observation:
   1. airline:
   - Depicts name of the airline from which the ticket is booked.
   - There are total 12 unique airline names in the dataset.
@@ -90,8 +89,8 @@ Using flight price dataset we try to find out following questions answer:
   - Represents fare of the ticket to fly from Source to destination.
   - It is of float datatype.
 
-### Observations:
-- Number of variables = 11
+### Overall statistics about dataset:
+- Number of columns/features = 11
 - Number of rows = 13354
 - Number of categorical type of feature = 10
 - Number of numerical type of feature = 1
