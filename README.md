@@ -116,7 +116,7 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q.5 Which source will be having highest fare?
 <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
-- Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
+ - Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
 
  - Banglore as the source location has the most outliers while Chennai has the least.
 
