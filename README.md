@@ -95,3 +95,10 @@ Using flight price dataset we try to find out following questions answer:
 - Number of rows = 13354
 - Number of categorical type of feature = 10
 - Number of numerical type of feature = 1
+
+### Phase 4. Data Analysis
+
+#### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
+- Of the total flight tickets sold Jet Airways has the highest share followed by Indigo.   
+<img width="997" alt="Q 1_screenshot" src="https://user-images.githubusercontent.com/127043120/226339938-66a1440a-001e-4c83-a3a0-aa251d2dcb93.png">
+
