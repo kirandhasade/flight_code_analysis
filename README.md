@@ -112,7 +112,8 @@ Using flight price dataset we try to find out following questions answer:
  - Jet Airways has the most outliers in terms of price.
 
 #### Q.4 Which airline has boarded the most?
-<img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">- Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
+<img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">
+- Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
 
 #### Q.5 Which source will be having highest fare?
 <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
