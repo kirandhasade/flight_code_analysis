@@ -123,5 +123,5 @@ Using flight price dataset we try to find out following questions answer:
 
 ### Q.6 Which destination will be having highest fare?
 <img width="999" alt="Q 6_screenshot" src="https://user-images.githubusercontent.com/127043120/226341067-b7eb1832-9d73-4073-b63c-8fc4d22444e1.png">
-- Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
+  - Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
   - New Delhi as the destination location has most of the outliers while Kolkata has the least.
