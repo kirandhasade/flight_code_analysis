@@ -95,6 +95,20 @@ Using flight price dataset we try to find out following questions answer:
 - Number of categorical type of feature = 10
 - Number of numerical type of feature = 1
 
+### Phase 3: Data Cleaning
+- Step 1. date_of_journey column contains object datatype so  we have to split it into date month and year columns and then convert it into int datatype.
+- Step 2. We have dropped date_of_journey column.
+- Step 3: arrival_time column contains object datatype so we have to split it into arrival_hour and arrival_min columns and then convert it into int datatype.
+- Step 4: We have dropped arrival_time column.
+- Step 5: dep_time column contains object datatype so we have to split it into dept_hour and dept_min columns and then convert it into int datatype.
+- Step 6: We have dropped dep_time column.
+- Step 7: duration column contains h:mm format so we have to split it into duration_hour and duration_min.
+- Step 8: We found in duration_hour column there were 2 records which was having '5m' data values which was inconsistent as the route was Mumbai to Hyderabad.Hence we dropped the two rows.
+- Step 9: Converted duration_hour into int.
+
+#### Data Preperation
+
+
 ### Phase 4. Data Analysis
 
 #### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
