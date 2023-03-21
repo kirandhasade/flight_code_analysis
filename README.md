@@ -113,7 +113,7 @@ Using flight price dataset we try to find out following questions answer:
 - Step 2: Wherever there is a NaN value replace it with zero (eg. if duration has only 2h data value in it's data in duration_hour column it will be 2 and in duration_min it will be 0) hence we are replacing duration_min column by zero.
 - Step 3: Convert duration_min into int datatype. 
 - Step 4: Dropping duration column
-- Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data points in the data set.
+- Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data    points in dataset.
 - <img width="791" alt="Null_value_handling" src="https://user-images.githubusercontent.com/127043120/226655860-b45bccb3-e032-491a-b9e7-42f7f06bc52b.png">
 
 ### Phase 4. Data Analysis
