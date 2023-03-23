@@ -123,11 +123,17 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Handling multiple Null Value
 - Observations: 
-- 1. Price has 2671 null records while route and total_stops have 1 null values respectively.
-- 2. Ticket price is depended on Airline, source, destination and number of stops.
+- 1. Price has **2671 null records** while route and total_stops have 1 null values respectively.
+- 2. Ticket price is depended on **airline, source, destination and number of stops**.
 - 3. Hence null price values will be imputed or replace by mean value based on Airline, route along with number of stops.
-
-
+- 4. **One null value** still exist in price once mean is imputed. 
+- <img width="945" alt="Screenshot 2023-03-23 at 11 49 38" src="https://user-images.githubusercontent.com/127043120/227194906-acb1e3d0-1461-421f-bea5-1c7aff6acefc.png">
+ - Hence we can perform following analyis for the same:
+       - 1.We will try to find similiar records i.e. same source ,destination and airline and will try to impute mean for the same.
+       - 2.We will ask airline for more detailed information of the flight  and can do the further analysis.
+       - 3.We can delete the record.
+  - We will delete the record as it has only one record, if it contains multiple records then we can be able to do futher analysis.
+    
 ### Phase 4. Data Analysis
 
 #### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
