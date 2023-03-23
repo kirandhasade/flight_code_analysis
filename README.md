@@ -98,26 +98,34 @@ Using flight price dataset we try to find out following questions answer:
 ### Phase 3: Data Cleaning, Preperation and Handling null values:
 
 #### Data Cleaning
-- Step 1. date_of_journey column contains object datatype so  we have to split it into date month and year columns and then convert it into int datatype.
-- Step 2. We have dropped date_of_journey column.
-- Step 3: arrival_time column contains object datatype so we have to split it into arrival_hour and arrival_min columns and then convert it into int datatype.
-- Step 4: We have dropped arrival_time column.
-- Step 5: dep_time column contains object datatype so we have to split it into dept_hour and dept_min columns and then convert it into int datatype.
-- Step 6: We have dropped dep_time column.
-- Step 7: duration column contains h:mm format so we have to split it into duration_hour.
+- Step 1. **Split date_of_journey column into date month and year columns** and then convert it into int datatype, as it contains DD/MM/YYYY format and object datatype.
+- Step 2. **Dropped date_of_journey** column.
+- Step 3: **Split arrival_time column into arrival_hour and arrival_min columns** and then convert it into int datatype, as it contains HH:MM format and object datatype.
+- Step 5: **Split dep_time column into dept_hour and dept_min columns** and then convert it into int datatype, as it contains HH:MM format and object datatype. 
+- Step 6: **Dropped dep_time** column.
+- Step 7: **Split duration column into duration_hour column** as it contains H:MM format.
 - Step 8: We found in duration_hour column there were 2 records which was having '5m' data values which was inconsistent as the route was Mumbai to Hyderabad.Hence we dropped the two rows.
 - Step 9: Converted duration_hour into int.
 
 #### Data Preperation
-- Step 1: duration column contains h:mm format so we have to split it into duration_min.
+- Step 1: **Split duration column into duration_min column** as it contains H:MM format.
 - Step 2: Wherever there is a NaN value replace it with zero (eg. if duration has only 2h data value in it's data in duration_hour column it will be 2 and in duration_min it will be 0) hence we are replacing duration_min column by zero.
 - Step 3: Convert duration_min into int datatype. 
-- Step 4: We have dropped duration column.
+- Step 4: **Dropped duration** column.
 - Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data    points in dataset.
 - <img width="791" alt="Null_value_handling" src="https://user-images.githubusercontent.com/127043120/226655860-b45bccb3-e032-491a-b9e7-42f7f06bc52b.png">
 - Step 6: We have dropped route column.
 - Step 7: To analyse total_stops column we are using map function in which non_stop is mapped with zero, 1 stop is mapped with 1, 2 stops is mapped with 2, 3 stops is mapped with 3, 4 stops is mapped with 4 and nan vaue with 1.
 - <img width="1005" alt="map_function" src="https://user-images.githubusercontent.com/127043120/227167643-3a44b8cb-8cad-4dcb-a29e-291d49d06401.png">
+- Step 8 We are using Label Encoder for the airline,source,destination and additional_info columns to convert categorical feature into numerical feature.
+- Step 8: Following is the example of airline column label encoding
+- <img width="958" alt="Screenshot 2023-03-23 at 10 33 11" src="https://user-images.githubusercontent.com/127043120/227177061-512f17de-c34c-45d7-80af-a5f0e0efca59.png">
+
+#### Handling multiple Null Value
+- Observations: 
+- 1. Price has 2671 null records while route and total_stops have 1 null values respectively.
+- 2. Ticket price is depended on Airline, source, destination and number of stops.
+- 3. Hence null price values will be imputed or replace by mean value based on Airline, route along with number of stops.
 
 
 ### Phase 4. Data Analysis
