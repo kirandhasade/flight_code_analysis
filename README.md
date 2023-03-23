@@ -124,7 +124,9 @@ Using flight price dataset we try to find out following questions answer:
 
 #### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
   - Of the total flight tickets sold Jet Airways has the highest share followed by Indigo.
- <img width="997" alt="Q 1_screenshot" src="https://user-images.githubusercontent.com/127043120/226339938-66a1440a-001e-4c83-a3a0-aa251d2dcb93.png">   
+ <img width="997" alt="Q 1_screenshot" src="https://user-images.githubusercontent.com/127043120/226339938-66a1440a-001e-4c83-a3a0-aa251d2dcb93.png">  
+ <img width="625" alt="Q 1_a_screenshot" src="https://user-images.githubusercontent.com/127043120/227168521-7f07605d-648e-47e0-86ff-e946e7139e9a.png">
+
 
 #### Q.2. Which month have most number of flights?
 - May has most number of flights followed by June and March.
