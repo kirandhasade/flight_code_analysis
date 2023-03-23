@@ -114,7 +114,7 @@ Using flight price dataset we try to find out following questions answer:
 - Step 4: **Dropped duration** column.
 - Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data    points in dataset.
 - <img width="791" alt="Null_value_handling" src="https://user-images.githubusercontent.com/127043120/226655860-b45bccb3-e032-491a-b9e7-42f7f06bc52b.png">
-- Step 6: We have dropped route column.
+- Step 6: **Dropped route** column.
 - Step 7: To analyse total_stops column we are using map function in which non_stop is mapped with zero, 1 stop is mapped with 1, 2 stops is mapped with 2, 3 stops is mapped with 3, 4 stops is mapped with 4 and nan vaue with 1.
 - <img width="1005" alt="map_function" src="https://user-images.githubusercontent.com/127043120/227167643-3a44b8cb-8cad-4dcb-a29e-291d49d06401.png">
 - Step 8 We are using Label Encoder for the airline,source,destination and additional_info columns to convert categorical feature into numerical feature.
