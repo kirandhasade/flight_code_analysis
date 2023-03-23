@@ -112,9 +112,13 @@ Using flight price dataset we try to find out following questions answer:
 - Step 1: duration column contains h:mm format so we have to split it into duration_min.
 - Step 2: Wherever there is a NaN value replace it with zero (eg. if duration has only 2h data value in it's data in duration_hour column it will be 2 and in duration_min it will be 0) hence we are replacing duration_min column by zero.
 - Step 3: Convert duration_min into int datatype. 
-- Step 4: Dropping duration column
+- Step 4: We have dropped duration column.
 - Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data    points in dataset.
 - <img width="791" alt="Null_value_handling" src="https://user-images.githubusercontent.com/127043120/226655860-b45bccb3-e032-491a-b9e7-42f7f06bc52b.png">
+- Step 6: We have dropped route column.
+- Step 7: To analyse total_stops column we are using map function in which non_stop is mapped with zero, 1 stop is mapped with 1, 2 stops is mapped with 2, 3 stops is mapped with 3, 4 stops is mapped with 4 and nan vaue with 1.
+- <img width="1005" alt="map_function" src="https://user-images.githubusercontent.com/127043120/227167643-3a44b8cb-8cad-4dcb-a29e-291d49d06401.png">
+
 
 ### Phase 4. Data Analysis
 
