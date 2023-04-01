@@ -1,93 +1,74 @@
 ### Project Name: Flight Prediction Analysis
 
 ### Project Objective:
-- The number of people who fly has dramatically increased in recent years. Pricing alters dynamically owing to many variables, making it difficult for airlines to maintain prices. As a result, we will attempt to solve this problem by cleaning, preparing and analysing the flight price.
+- The number of people who fly has dramatically increased in recent years. Pricing alters dynamically owing to many variables, making it difficult for airlines to maintain prices. As a result, I am attemptted to solve this problem by cleaning, preparing and analysing the flight price.
 - Hence, the goal of this project is to clean, prepare and analyse the flight price dataset taken from Kaggle.
-- Basically dataset have price based on information such as airline, date_of_journey, flight route information including number of stops and duration of flight.
-- So that we can use this dataset to analyse the flight journey price based on a variety of variables as mentioned above. 
+- Basically dataset have price based on information such as airline, date_of_journey, flight route including number of stops and duration of flight.
+- Used this dataset to analyse the flight **journey price** based on a variety of variables as mentioned above. 
 
-Using flight price dataset we try to find out following questions answer:
-1. Top 10 Aviation Companies whose flight tickets are sold the most ?
+Using flight price dataset we tried to find out following questions answer:
+1. Top 10 Aviation Companies whose flight tickets are sold the most?
 2. Which month have most number of flights?
 3. Which airline is most expensive?
 4. Which airline has boarded the most?
 5. Which source will be having highest fare?
 6. Which destination will be having highest fare?
 
-### Project Involve Phases:
+### Project Involve Following Phases:
 1. Data Collection
 2. Data Understanding
 3. Data Cleaning & Preparation 
 4. Data Analysis
 
 ### Phase 1. Data Collection
-- This dataset comprises of contains information about flight booking options. Data taken from Kaggle - flights travel between India's top 6 metro cities.
+- This dataset comprises information about flight booking options. Data taken from Kaggle - flights travel between India's top 6 metro cities.
 - This data consists of 11 rows and 13354 columns.
 
-### Phase 2:Data Understanding
+### Phase 2: Data Understanding
   1. airline:
-  - Depicts name of the airline from which the ticket is booked.
-  - There are total 12 unique airline names in the dataset.
-  - It is of Object datatype.
-  
+  - Name of the airline ticket was booked.
+  - There are total **12 unique airline** in the dataset.
   
   2. date_of_journey:
-  - Represents journey date of each traveller. 
-  - It is a date column in MM/DD/YYYY format.
-  - It It is of Object datatype.
-  
+  - Date column in MM/DD/YYYY format.
   
   3. source:
   - Represents source from which the airline would departure.
   - There are total 5 unique source names in the dataset.
-  - It is of Object datatype.
-  
   
   4. destination:
   - Represents destination to which airline would arrive
   - There are total 6 unique destination names in the dataset.
-  - It is of Object datatype.
-  
   
   5. route:
   - Represents route of the airline from source to destination.
-  - It is of Object datatype. 
   - There is one null value in the dataset.
   
   
   6. dep_time:
-  - Represents time at which flight would departure from the source.
+  - Departure time from the source.
   - It is in H:MM format.
-  - It is of Object datatype.
-  
   
   7. arrival_time:
-  - Represents time at which flight would arrive at the destination.
+  - Arrival time at the destination.
   - It is in H:MM format followed by date.
-  - It is of Object datatype.
-  
   
   8. duration: 
-  - Represents duration that airline Takes to fly from source to destination..
-  - It is of Object datatype. 
-  
+  - Represents flight duration to fly from source to destination.
+  - It have mixed time formates some rows have in minutes, some have in hours and so on.
   
   9. total_stops:
-  - Represents total no. of stops that airline takes between source and destination.
-  - There are total 5 unique total stops in the dataset.
+  - Represents total no. of stops journey have between source and destination.
+  - Total 5 unique total stops in the dataset.
   - There is one null value in the dataset.
-  - It is of Object datatype.
-  
   
    10. additional_info:
-  - Represents any Additional info about the airline.
-  - There are total 10 unique additional information in the dataset.
-  - It is of Object datatype.
-  
-  
+  - Represents any additional info about the journey.
+  - Total 10 unique additional information in the dataset.
+ 
    11. Price:
   - Represents fare of the ticket to fly from Source to destination.
-  - It is of float datatype.
+  - All prices in local currency i.e. in Rupees.
 
 ### Overall statistics about dataset:
 - Number of columns/features = 11
