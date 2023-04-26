@@ -116,33 +116,40 @@ Using flight price dataset we tried to find out following questions answer:
 ### Phase 4. Data Analysis
 
 #### Q. 1.Top 10 Aviation Companies whose flight tickets are sold the most?
-  - Of the total flight tickets sold Jet Airways has the highest share followed by Indigo.
- <img width="997" alt="Q 1_screenshot" src="https://user-images.githubusercontent.com/127043120/226339938-66a1440a-001e-4c83-a3a0-aa251d2dcb93.png">  
- <img width="625" alt="Q 1_a_screenshot" src="https://user-images.githubusercontent.com/127043120/227168521-7f07605d-648e-47e0-86ff-e946e7139e9a.png">
+  - Of the total flight tickets sold Jet Airways has the highest share which is 35.62% followed by Indigo and Air India. 
+- ![Screenshot 2023-04-26 at 15 22 08](https://user-images.githubusercontent.com/127043120/234605809-c254b899-63e1-464a-87c0-c1b71d8fd19e.png)
 
+- ![Screenshot 2023-04-26 at 15 22 30](https://user-images.githubusercontent.com/127043120/234605940-440db811-ebdf-4274-b509-ece2a100b74b.png)
 
 #### Q.2. Which month have most number of flights?
 - May has most number of flights followed by June and March.
-<img width="641" alt="Q 2_screenshot" src="https://user-images.githubusercontent.com/127043120/226340261-e2a55e8b-b723-49c3-9683-cca08c0c2ca2.png">
-
+![Screenshot 2023-04-26 at 15 24 38](https://user-images.githubusercontent.com/127043120/234606574-26d6f81a-e3ca-43bb-8cab-cfd595bfc649.png)
 
 #### Q.3. Which airline is most expensive?
- <img width="1010" alt="Q 3_screenshot" src="https://user-images.githubusercontent.com/127043120/226340487-0dabd559-852a-4b12-b161-2c023e8f3d47.png">
-- Jet Airways Business has higher flight fares as compared to other Airlines, followed by Jet Airways and Multiple carriers.
-- Jet Airways has the most outliers in terms of price.
-
+  - Jet Airways Business has higher flight fares as compared to other airlines which is approximately 58,000 rupees, followed by Jet Airways and Multiple carriers whose prices are approximately 11,000 and 10,000 rupees.
+![Screenshot 2023-04-26 at 15 30 00](https://user-images.githubusercontent.com/127043120/234608221-d4258723-52a6-4ad5-8730-238524a456b8.png)
 
 #### Q.4 Which airline has boarded the most?
- - Jet Airways has most of the flights boarded followed by IndiGo and AirIndia.
- <img width="1003" alt="Q 4_screenshot" src="https://user-images.githubusercontent.com/127043120/226340733-9b5a0dbc-6d42-4bc6-aec1-4382ab5121c6.png">
+ - Jet Airways has most of the flights boarded which is 4746 followed by IndiGo and AirIndia whose count are 2564 and 2190 respectively.
+ ![Screenshot 2023-04-26 at 15 28 26](https://user-images.githubusercontent.com/127043120/234607722-98f4cee7-f052-44a8-bbd8-fd4eb8891c82.png)
  
 #### Q.5 Which source will be having highest fare?
-- Flights originating from banglore has high flight fares as compared to other sources from where flights are originating.
-- Banglore as the source location has the most outliers while Chennai has the least.
- <img width="1012" alt="Q 5_screenshot" src="https://user-images.githubusercontent.com/127043120/226340851-fe270916-f2ed-4778-a4ce-d2c69595b43b.png">
+- Flights originating from banglore has high flight fares as compared to other sources.
+- Banglore as the source location has the most outliers as it's maximum price is approximately 80,000 rupees while Chennai has the least as it's maximum price is approximately 25,000 rupees.
+![Screenshot 2023-04-26 at 15 31 02](https://user-images.githubusercontent.com/127043120/234608548-8d3f793e-6207-4461-9209-21372cac86bc.png)
+
  
 #### Q.6 Which destination will be having highest fare?
-- Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
-- New Delhi as the destination location has most of the outliers while Kolkata has the least.
- <img width="999" alt="Q 6_screenshot" src="https://user-images.githubusercontent.com/127043120/226341067-b7eb1832-9d73-4073-b63c-8fc4d22444e1.png"> 
+ - Flights whose destination is New Delhi has highest fare compared to other flights whose destination is other than New Delhi.
+ - New Delhi as the destination location has most of the outliers as it's maximum price is 80,000 rupees approximately while Kolkata has the least with approx 10,000 rupees.
+ - ![Screenshot 2023-04-26 at 15 31 40](https://user-images.githubusercontent.com/127043120/234608703-b1633c04-acfa-4c2a-99f2-7bd5453b395e.png)
+
+#### Q.7 Which city is popular source city where most of the flights boarded?
+- Delhi is most popular source city where maximum number of flights boarded i.e. 5682 and Chennai is the least amongst all the city with the count of 456.
+- ![Screenshot 2023-04-26 at 15 32 30](https://user-images.githubusercontent.com/127043120/234608962-4ab93900-06ab-45ba-a429-60e657e74eef.png)
+
+#### Q.8 Which city is popular destination city where most of the flights landed?
+- Cochin is most popular destination city where maximum number of flights landed i.e. 5682 and Kolkata is the least amongst all the city with the count of 456.
+ ![Screenshot 2023-04-26 at 15 33 38](https://user-images.githubusercontent.com/127043120/234609289-05df348f-b495-4d8c-9270-851513bf9d37.png)
+
   
