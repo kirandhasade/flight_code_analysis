@@ -13,6 +13,8 @@ Using flight price dataset we tried to find out following questions answer:
 4. Which airline has boarded the most?
 5. Which source will be having highest fare?
 6. Which destination will be having highest fare?
+7. Which city is popular source city where most of the flights boarded?
+8. Which city is popular destination city where most of the flights landed?
 
 ### Project Involve Following Phases:
 1. Data Collection
@@ -30,45 +32,50 @@ Using flight price dataset we tried to find out following questions answer:
   - There are total **12 unique airline** in the dataset.
   
   2. date_of_journey:
-  - Date column in MM/DD/YYYY format.
+  - Journey date of each traveller. 
+  - It is a date column in MM/DD/YYYY format.
+  - Dates are from 01/03/2019 to 09/06/2019
   
   3. source:
-  - Represents source from which the airline would departure.
-  - There are total 5 unique source names in the dataset.
+  - Source from which the airline would depart.
+  - Total 5 unique source names in the dataset.
+  - It contains Banglore, Kolkata, Delhi, Chennai, Mumbai.
   
   4. destination:
-  - Represents destination to which airline would arrive
+  - Destination to which airline would arrive
   - There are total 6 unique destination names in the dataset.
+  - It contains New Delhi, Banglore, Cochin, Kolkata, Delhi, Hyderabad.
   
   5. route:
   - Represents route of the airline from source to destination.
   - There is one null value in the dataset.
   
-  
   6. dep_time:
-  - Departure time from the source.
-  - It is in H:MM format.
+  - Time at which flight would departure from the source.
+  - It is in H:MM format
   
   7. arrival_time:
-  - Arrival time at the destination.
-  - It is in H:MM format followed by date.
+  - Time at which flight would arrive at the destination.
+  - It is in H:MM format followed by date of arrival.
   
   8. duration: 
-  - Represents flight duration to fly from source to destination.
-  - It have mixed time formates some rows have in minutes, some have in hours and so on.
+  - Duration that airline takes to fly from source to destination.
+  - It is in H:MM format.
+  
   
   9. total_stops:
-  - Represents total no. of stops journey have between source and destination.
-  - Total 5 unique total stops in the dataset.
+  - Total no. of stops that airline takes between source and destination.
+  - There are total 5 unique total stops in the dataset.
   - There is one null value in the dataset.
+  - It contains non-stop, 2 stops, 1 stop, 3 stops, nan, 4 stops.
   
    10. additional_info:
-  - Represents any additional info about the journey.
-  - Total 10 unique additional information in the dataset.
+  - Represents any Additional info about the airline.
+  - There are total 10 unique additional information in the dataset.
+  - It contains No info, In-flight meal not included,No check-in baggage included, 1 Short layover, No Info,1 Long layover, Change airports, Business class,Red-eye flight, 2 Long layover.
  
    11. Price:
-  - Represents fare of the ticket to fly from Source to destination.
-  - All prices in local currency i.e. in Rupees.
+   - Represents fare of the ticket to fly from Source to destination in rupees.
 
 ### Overall statistics about dataset:
 - Number of columns/features = 11
