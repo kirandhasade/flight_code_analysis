@@ -86,43 +86,30 @@ Using flight price dataset we tried to find out following questions answer:
 ### Phase 3: Data Cleaning, Preperation and Handling null values:
 
 #### Data Cleaning
-- Step 1. **Split date_of_journey column into date month and year columns** and then convert it into int datatype, as it contains DD/MM/YYYY format and object datatype.
-- Step 2. **Dropped date_of_journey** column.
-- Step 3: **Split arrival_time column into arrival_hour and arrival_min columns** and then convert it into int datatype, as it contains HH:MM format and object datatype.
-- Step 5: **Split dep_time column into dept_hour and dept_min columns** and then convert it into int datatype, as it contains HH:MM format and object datatype. 
-- Step 6: **Dropped dep_time** column.
-- Step 7: **Split duration column into duration_hour column** as it contains H:MM format.
-- Step 8: We found in duration_hour column there were 2 records which was having '5m' data values which was inconsistent as the route was Mumbai to Hyderabad.Hence we dropped the two rows.
-- Step 9: Converted duration_hour into int.
-
-#### Data Preperation
-- Step 1: **Split duration column into duration_min column** as it contains H:MM format.
-- Step 2: Wherever there is a NaN value replace it with zero (eg. if duration has only 2h data value in it's data in duration_hour column it will be 2 and in duration_min it will be 0) hence we are replacing duration_min column by zero.
-- Step 3: Convert duration_min into int datatype. 
-- Step 4: **Dropped duration** column.
-- Step 5: We analysed route column and we found there is one null value in route column which we have replaced with one stop by refering similar data    points in dataset.
+- Step 1. **Dropping 2 rows** there are 2 records whose flight duration is of 5 min which is inconsisent because distance between Mumbai to Hyderabad is approximately 713 Km and it approximately takes 2 hours to reach to Hyderabad from Mumbai.
+- Step 2: **Filling total_stops column null value** there is one row where total_stops column contains 1 null value.As the flight duration is approximately 23 hours and journey is from Delhi to Cochin hence here replacing total_stops null value with 1 by refering similar data points in dataset.
 - <img width="791" alt="Null_value_handling" src="https://user-images.githubusercontent.com/127043120/226655860-b45bccb3-e032-491a-b9e7-42f7f06bc52b.png">
-- Step 6: **Dropped route** column.
-- Step 7: To analyse total_stops column we are using map function in which non_stop is mapped with zero, 1 stop is mapped with 1, 2 stops is mapped with 2, 3 stops is mapped with 3, 4 stops is mapped with 4 and nan vaue with 1.
+- Step 3:**Handling categorical(total_stops) column** replacing total_stops column with integer variable such as non-stop:0,1 stop:1,2 stops:2,3 stops:3,4 stops:4,nan:1
 - <img width="1005" alt="map_function" src="https://user-images.githubusercontent.com/127043120/227167643-3a44b8cb-8cad-4dcb-a29e-291d49d06401.png">
-- Step 8 We are using Label Encoder for the airline,source,destination and additional_info columns to convert categorical feature into numerical feature.
-- Step 8: Following is the example of airline column label encoding
-- <img width="958" alt="Screenshot 2023-03-23 at 10 33 11" src="https://user-images.githubusercontent.com/127043120/227177061-512f17de-c34c-45d7-80af-a5f0e0efca59.png">
+- Step 4:**Delete route column** Analysis not based on route column hence, deleting route column.
 
 #### Handling multiple Null Value
-- Observations: 
-- 1. Price has **2671 null records** while route and total_stops have 1 null values respectively.
-- 2. Ticket price is depended on **airline, source, destination and number of stops**.
-- 3. Hence null price values will be imputed or replace by mean value based on Airline, route along with number of stops.
-- <img width="1000" alt="Screenshot 2023-03-23 at 12 11 33" src="https://user-images.githubusercontent.com/127043120/227200126-2c4a8fff-6019-4809-a26d-e0c3ddc52a46.png">
-- 4. **One null value** still exist in price once mean is imputed. 
-- <img width="945" alt="Screenshot 2023-03-23 at 11 49 38" src="https://user-images.githubusercontent.com/127043120/227194906-acb1e3d0-1461-421f-bea5-1c7aff6acefc.png">
- - Hence we can perform following analyis for the same:
-    - 1. We will try to find similiar records i.e. same source ,destination and airline and will try to impute mean for the same.
-    - 2. We will ask airline for more detailed information of the flight  and can do the further analysis.
+- Step 1:**Impute mean for price column:**
+ - 1. Price has **2671 null records** while 
+ - 2. Ticket price is depended on **airline, source, destination and number of stops**.
+ - 3. Hence null price values will be imputed or replace by mean value based on airline, route along with number of stops.
+ - <img width="1000" alt="Screenshot 2023-03-23 at 12 11 33" src="https://user-images.githubusercontent.com/127043120/227200126-2c4a8fff-6019-4809-a26d-e0c3ddc52a46.png">
+- Step 2:**Filling null values with mean data:**
+-  - After calucating mean in Step 1 we are replacing all price columns null values with mean data as price is dependent on various factors like which airline, source and destination and number of stops.
+- Step 3: After step - 3 **drop rows having incomplete information:**
+   - After Step 2-found that there is only one record left for Jet Airways Business flying from Bangalore to New Delhi.
+   - <img width="945" alt="Screenshot 2023-03-23 at 11 49 38" src="https://user-images.githubusercontent.com/127043120/227194906-acb1e3d0-1461-421f-bea5-1c7aff6acefc.png">
+   - We will delete the record as it has only one record, if it contains multiple records then we can be able to do futher analysis.
+   - - <img width="1000" alt="Screenshot 2023-03-23 at 11 59 25" src="https://user-images.githubusercontent.com/127043120/227197496-3346e1ea-fadc-4a17-a2bd-0edd3223e645.png">
+ - In real world we can perform following analyis for the same:
+    - 1. We try to find similiar records i.e. same source ,destination and airline and will try to impute mean for the same.
+    - 2. We'll ask airline for more detailed information of the flight and can do the further analysis.
     - 3. We can delete the record.
-  - We will delete the record as it has only one record, if it contains multiple records then we can be able to do futher analysis.
-  - <img width="1000" alt="Screenshot 2023-03-23 at 11 59 25" src="https://user-images.githubusercontent.com/127043120/227197496-3346e1ea-fadc-4a17-a2bd-0edd3223e645.png">
 
     
 ### Phase 4. Data Analysis
