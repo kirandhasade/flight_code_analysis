@@ -150,6 +150,7 @@ Using flight price dataset we tried to find out following questions answer:
 
 #### Q.8 Which city is popular destination city where most of the flights landed?
 - Cochin is most popular destination city where maximum number of flights landed i.e. 5682 and Kolkata is the least amongst all the city with the count of 456.
+- 
  ![Screenshot 2023-04-26 at 15 33 38](https://user-images.githubusercontent.com/127043120/234609289-05df348f-b495-4d8c-9270-851513bf9d37.png)
 
   
