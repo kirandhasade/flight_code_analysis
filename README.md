@@ -34,16 +34,16 @@ Using flight price dataset we tried to find out following questions answer:
   2. date_of_journey:
   - Journey date of each traveller. 
   - It is a date column in MM/DD/YYYY format.
-  - Dates are from 01/03/2019 to 09/06/2019
+  - Dates are from **01/03/2019 to 09/06/2019**
   
   3. source:
   - Source from which the airline would depart.
-  - Total 5 unique source names in the dataset.
+  - Total **5 unique source** names in the dataset.
   - It contains Banglore, Kolkata, Delhi, Chennai, Mumbai.
   
   4. destination:
   - Destination to which airline would arrive
-  - There are total 6 unique destination names in the dataset.
+  - There are total **6 unique destination** names in the dataset.
   - It contains New Delhi, Banglore, Cochin, Kolkata, Delhi, Hyderabad.
   
   5. route:
@@ -65,17 +65,17 @@ Using flight price dataset we tried to find out following questions answer:
   
   9. total_stops:
   - Total no. of stops that airline takes between source and destination.
-  - There are total 5 unique total stops in the dataset.
+  - There are total **5 unique total stops** in the dataset.
   - There is one null value in the dataset.
   - It contains non-stop, 2 stops, 1 stop, 3 stops, nan, 4 stops.
   
    10. additional_info:
   - Represents any Additional info about the airline.
-  - There are total 10 unique additional information in the dataset.
+  - There are total **10 unique additional information** in the dataset.
   - It contains No info, In-flight meal not included,No check-in baggage included, 1 Short layover, No Info,1 Long layover, Change airports, Business class,Red-eye flight, 2 Long layover.
  
    11. Price:
-   - Represents fare of the ticket to fly from Source to destination in rupees.
+   - Represents fare of the ticket to fly from Source to destination in **rupees**.
 
 ### Overall statistics about dataset:
 - Number of columns/features = 11
