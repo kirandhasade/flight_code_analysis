@@ -95,14 +95,15 @@ Using flight price dataset we tried to find out following questions answer:
 
 #### Handling multiple Null Value
 - Step 1:**Impute mean for price column:**
- - 1. Price has **2671 null records** while 
- - 2. Ticket price is depended on **airline, source, destination and number of stops**.
- - 3. Hence null price values will be imputed or replace by mean value based on airline, route along with number of stops.
- - <img width="1000" alt="Screenshot 2023-03-23 at 12 11 33" src="https://user-images.githubusercontent.com/127043120/227200126-2c4a8fff-6019-4809-a26d-e0c3ddc52a46.png">
+  - 1. Price has **2671 null records** while 
+  - 2. Ticket price is depended on **airline, source, destination and number of stops**.
+  - 3. Hence null price values will be imputed or replace by mean value based on airline, route along with number of stops.
+  - <img width="1000" alt="Screenshot 2023-03-23 at 12 11 33" src="https://user-images.githubusercontent.com/127043120/227200126-2c4a8fff-6019-4809-a26d-e0c3ddc52a46.png">
 - Step 2:**Filling null values with mean data:**
--  - After calucating mean in Step 1 we are replacing all price columns null values with mean data as price is dependent on various factors like which airline, source and destination and number of stops.
-- Step 3: After step - 3 **drop rows having incomplete information:**
+  - After calucating mean in Step 1 we are replacing all price columns null values with mean data as price is dependent on various factors like which airline, source and destination and number of stops.
+- Step 3: After step - 2 **drop rows having incomplete information:**
    - After Step 2-found that there is only one record left for Jet Airways Business flying from Bangalore to New Delhi.
+   - As there is no corresponding rows for the factors which is airline,source,destination in dataset to compute it's mean price amount.
    - <img width="945" alt="Screenshot 2023-03-23 at 11 49 38" src="https://user-images.githubusercontent.com/127043120/227194906-acb1e3d0-1461-421f-bea5-1c7aff6acefc.png">
    - We will delete the record as it has only one record, if it contains multiple records then we can be able to do futher analysis.
    - - <img width="1000" alt="Screenshot 2023-03-23 at 11 59 25" src="https://user-images.githubusercontent.com/127043120/227197496-3346e1ea-fadc-4a17-a2bd-0edd3223e645.png">
